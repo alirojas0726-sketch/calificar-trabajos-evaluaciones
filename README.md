@@ -16,13 +16,17 @@ Creado originalmente por **Alirio Rojas Villamizar** ("Profe Alirio"), profesor 
 
 La versión original de este skill también enviaba la nota por WhatsApp automáticamente a cada estudiante, usando automatización de navegador sobre el WhatsApp Web del profesor. Se dejó fuera de esta versión pública a propósito: depende de una configuración particular (Claude in Chrome conectado al WhatsApp Web de cada profesor) y, sobre todo, porque enviar calificaciones de menores de edad por un canal automatizado es una decisión que cada docente debe tomar con sus propias reglas de consentimiento y verificación — no algo que convenga activar por defecto en una plantilla pública. Si te interesa esa parte, puedes construirla tú mismo sobre esta base.
 
+## Descarga directa
+
+**[⬇️ Descargar calificar-trabajos-evaluaciones.zip](https://github.com/alirojas0726-sketch/calificar-trabajos-evaluaciones/raw/main/calificar-trabajos-evaluaciones.zip)** — listo para subir a Claude tal cual, sin descomprimir.
+
 ## Cómo usarlo
 
-1. Descarga la carpeta `calificar-trabajos-evaluaciones/` de este repositorio (contiene `SKILL.md`).
-2. Agrégala a tus skills de Claude:
-   - **Claude Code**: copia la carpeta dentro de `.claude/skills/` de tu proyecto o de tu cuenta.
-   - **Claude / Cowork**: si tu organización tiene habilitada la carga de skills, súbela desde la configuración de skills (como archivo `SKILL.md` o carpeta comprimida `.skill`).
-3. Abre `SKILL.md` y reemplaza los datos de ejemplo (curso, institución, nota mínima) por los tuyos — está escrito para que lo ajustes, no para usarlo tal cual.
+1. Descarga el archivo `calificar-trabajos-evaluaciones.zip` con el enlace de arriba (contiene la carpeta del skill con su `SKILL.md`).
+2. Agrégalo a tus skills de Claude:
+   - **App de Claude (web o escritorio)**: en la configuración de skills, sube el `.zip` tal como lo descargaste — no hace falta descomprimirlo.
+   - **Claude Code**: descomprímelo y copia la carpeta `calificar-trabajos-evaluaciones/` dentro de `.claude/skills/` de tu proyecto o de tu cuenta.
+3. Abre `SKILL.md` (puedes editarlo desde la misma configuración de skills, o antes de subirlo) y reemplaza los datos de ejemplo (curso, institución, nota mínima) por los tuyos — está escrito para que lo ajustes, no para usarlo tal cual.
 4. Pídele a Claude que califique un trabajo o evaluación escaneada, **adjuntando los PDF escaneados** en el chat (o dejándolos en la carpeta `escaneos/` si tienes tu computador conectado a Claude — ver sección 1 del skill). El skill se activa automáticamente cuando la petición coincide con su descripción; sin los escaneos no tiene nada que calificar.
 5. Si quieres que cruce nombres con tu lista oficial del curso, adjunta también ese Excel (el roster) — es opcional, pero evita errores de lectura en los nombres.
 
